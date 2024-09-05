@@ -15,7 +15,6 @@ object-fit: cover;
     font-size: 1.8rem;   
 }
 
-
 /* MEDIAQUERIES*/
 @media screen and (max-width: 900px){
 
@@ -25,17 +24,17 @@ object-fit: cover;
 
 }
 
-@media screen and (max-width: 428px){
+@media screen and (max-width: 429px){
     .carousel_titulo{
         font-size: 3rem;
     }
     .carousel_desc{
-        font-size: 1rem;   
+        font-size: 1.2rem;   
     }
 }
 
-@media screen and (max-width: 390px){
+@media screen and (max-width: 391px){
     .carousel_boton{
-        font-size: 1rem;   /* Reduce el tamaño del texto */
+        font-size: 1.2rem;   /* Reduce el tamaño del texto */
     }
 }
