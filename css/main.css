@@ -96,7 +96,7 @@
     height: 400px;
     font-family: "Poppins";
     color: white;
-    background-color:#353434 ;
+    background-color: var(--colorPrimarioAzul) ;
     padding: 50px;
     margin: 50px auto;
 }
@@ -120,25 +120,16 @@
 /* DISPOSITIVOS PEQUEÑOS 768PX */
 
 @media (max-width: 768px){
-    .gallery{
-        flex-wrap: wrap;
-        flex-basis: auto;
+    .galeria_publicidad{
+        visibility: hidden;
 }
 
 }
 /* CELULARES 480PX */
 
 @media(max-width:480px){
-    .gallery{
-    display: flex;
-
-    }
-    .gallery_img:hover{
-        width: 10px;
-       height: 50px;
-    }
-    }
-
+    
+}
     
     /* MEDIAQUERIES*/
 
