@@ -1,0 +1,158 @@
+.carousel-img {
+    width: 100%;
+    height: 550px;
+    object-fit: cover;
+}
+
+.carousel_content {
+    text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.5);
+    /*para agregarle sombra a las letras*/
+}
+
+.carousel_titulo {
+    font-size: 5rem;
+}
+
+.carousel_desc {
+    font-size: 1.8rem;
+}
+
+/* degrade del carousel*/
+.carousel-item {
+    position: relative;
+}
+
+/* Crea el degradado en la parte inferior del carousel-item */
+.carousel-item::after {
+    content: "";
+    position: absolute;
+    bottom: -10px;
+    /*le puse -10px por que sino se ve cortado*/
+    left: 0;
+    width: 100%;
+    height: 100%;
+    /* Ajusta el alto del degradado */
+    background: linear-gradient(to top, rgba(53, 52, 52, 1), rgba(53, 52, 52, 0));
+    z-index: 1;
+    /* Asegúrate de que el degradado esté encima del contenido */
+}
+
+.carousel-caption {
+    z-index: 2;
+    /* Asegúrate de que el texto esté encima del degradado */
+}
+
+/* degrade del carousel*/
+
+
+/* LAS MAS ACLAMADAS */
+
+
+.container_flex {
+    display: flex;
+    justify-content: flex-start;
+    overflow-x: auto;
+    padding: 3em 3em 3em;
+    gap: 2em;
+    align-items: center;
+    width: 100vw;
+}
+
+.container_flex>div {
+    flex: 0 0 auto;
+    width: 450px;
+
+}
+
+.img-box {
+    width: 100%;
+    height: 250px;
+    object-fit: cover;
+    border-radius: 2px;
+    transition: transform 0.5s;
+
+    &:hover {
+        transform: scale(1.1);
+        border: 5px solid white;
+    }
+}
+
+.div_animations img{
+    border-radius: 20px;
+    box-shadow: 10px 10px 15px rgba(0, 0, 0, 0.7);
+    /* Desplazamiento horizontal, desplazamiento vertical, desenfoque, color */
+}
+
+.container_flex:has(.img-box:hover).img-box:not(:hover) {
+    filter: grayscale(100%) brightness(50%);
+}
+
+/* MEDIAQUERIES*/
+@media screen and (max-width: 900px) {}
+
+@media screen and (max-width: 768px) {}
+
+@media screen and (max-width: 429px) {
+    .carousel_titulo {
+        font-size: 3rem;
+    }
+
+    .carousel_desc {
+        font-size: 1.2rem;
+    }
+}
+
+@media screen and (max-width: 391px) {
+    .carousel_boton {
+        font-size: 1.2rem;
+        /* Reduce el tamaño del texto */
+    }
+}
+/* PUBLICIDAD */
+.publicidad{
+    display: flex;
+    width: 100%;
+    height: 400px;
+    font-family: "Poppins";
+    color: white;
+    background-color:#353434 ;
+    padding: 50px;
+    margin: 50px auto;
+}
+.gallery_img{
+    width: 0;
+    flex-grow: 3;
+    border-radius: 5px;
+    object-fit: cover;
+    opacity: .7;
+    transition: all .3s ease;
+
+}
+
+.gallery_img:hover{ 
+    width: 300px;
+    opacity: 4;
+    cursor: crosshair;
+    filter: contrast(120%);
+}
+/* DISPOSITIVOS PEQUEÑOS 768PX */
+
+@media (max-width: 768px){
+    .gallery{
+        flex-wrap: wrap;
+        flex-basis: auto;
+}
+
+}
+/* CELULARES 480PX */
+
+@media(max-width:480px){
+    .gallery{
+    display: flex;
+   
+    }
+    .gallery_img:hover{
+        width: 10px;
+       height: 50px;
+    }
+    }
