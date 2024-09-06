@@ -1,0 +1,11 @@
+.navbar{
+    background-color: var(--colorPrimarioAzul);
+    font-size: large;
+    list-style-type: none;
+}
+
+.navbar a{
+    color: white;
+    text-shadow: 1px 1px black;
+}
+
