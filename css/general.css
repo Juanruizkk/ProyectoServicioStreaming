@@ -1,3 +1,6 @@
+*{
+    font-family: 'Poppins', 'Arial';
+}
 body{
-    background: var(--colorPrimarioAzul);
+    background: var(--colorSecundarioGris);
 }
