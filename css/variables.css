@@ -4,6 +4,6 @@ defino las variables que voy a utilizar
 :root{
     --tipografiaGenereal: 'Poppins';
     --colorPrimarioAzul: #004475;
-    --colorSecundarioGris: #353434;
+    --colorSecundarioGris: rgb(53, 52, 52);
     --colorSecundarioCeleste: #347cbc;
 }

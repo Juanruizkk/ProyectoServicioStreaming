@@ -1,0 +1,69 @@
+.carousel-img {
+    width: 100%;
+    height: 550px;
+    object-fit: cover;
+}
+
+.carousel_content {
+    text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.5);
+    /*para agregarle sombra a las letras*/
+}
+
+.carousel_titulo {
+    font-size: 5rem;
+}
+
+.carousel_desc {
+    font-size: 1.8rem;
+}
+
+/* degrade del carousel*/
+.carousel-item {
+    position: relative;
+}
+
+/* Crea el degradado en la parte inferior del carousel-item */
+.carousel-item::after {
+    content: "";
+    position: absolute;
+    bottom: -10px;
+    /*le puse -10px por que sino se ve cortado*/
+    left: 0;
+    width: 100%;
+    height: 100%;
+    /* Ajusta el alto del degradado */
+    background: linear-gradient(to top, rgba(53, 52, 52, 1), rgba(53, 52, 52, 0));
+    z-index: 1;
+    /* Asegúrate de que el degradado esté encima del contenido */
+}
+
+.carousel-caption {
+    z-index: 2;
+    /* Asegúrate de que el texto esté encima del degradado */
+}
+
+/* degrade del carousel*/
+
+
+
+/* MEDIAQUERIES*/
+@media screen and (max-width: 900px) {}
+
+@media screen and (max-width: 768px) {}
+
+@media screen and (max-width: 429px) {
+    .carousel_titulo {
+        font-size: 3rem;
+    }
+
+    .carousel_desc {
+        font-size: 1.2rem;
+    }
+}
+
+@media screen and (max-width: 391px) {
+    .carousel_boton {
+        font-size: 1.2rem;
+        /* Reduce el tamaño del texto */
+    }
+}
