@@ -6,19 +6,313 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Cinema Team 3</title>
     <!-- Bootstrap 5 -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
     <!-- FONTAWESOME -->
     <script src="https://kit.fontawesome.com/eef5852768.js" crossorigin="anonymous"></script>
-     <!-- CSS -->
-     <link rel="stylesheet" href="/css/style.css">
 
+    <!-- CSS -->
+    <link rel="stylesheet" href="/css/style.css">
+    <link rel="shortcut icon" href="/img/peliculas-series/img-logo-favicon.png" type="image/x-icon">
 </head>
+
 <body>
 
+    <!-- Navbar -->
 
+    <nav class="navbar navbar-expand-lg bg-body-tertiary">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#"><img src="/img/peliculas-series/img-logo.png" alt="logo-pag"
+                    width="200px"></a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link" aria-current="page" href="#">Inicio</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Películas</a>
+                    </li>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Series</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Planes</a>
+                    </li>
+                </ul>
+                <form class="d-flex" role="search">
+                    <input class="form-control me-2" type="search" placeholder="Buscar película o serie"
+                        aria-label="Search">
+                    <button class="btn btn-outline-light" type="submit"><i
+                            class="fa-solid fa-magnifying-glass"></i></button>
+                </form>
+                <br>
+                <ul class="navbar-nav">
+                    <li class="nav-item ms-4 me-3">
+                        <a class="nav-link" href="#"><i class="fa-solid fa-user fa-xl"></i></a>
+            </div>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- CAROUSEL -->
+    <main>
+        <section>
+            <div id="carouselExampleCaptions" class="carousel slide " data-bs-ride="carousel">
+                <div class="carousel-indicators">
+                    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active"
+                        aria-current="true" aria-label="Slide 1"></button>
+                    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1"
+                        aria-label="Slide 2"></button>
+                    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2"
+                        aria-label="Slide 3"></button>
+                    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="3"
+                        aria-label="Slide 4"></button>
+                </div>
+
+                <div class="carousel-inner ">
+                    <div class="carousel-item active" data-bs-interval="17000">
+                        <video class="carousel-img d-block w-100" autoplay loop muted poster="imagen-previa.jpg">
+                            <source src="/videos/el-encargado-video.MOV" type="video/mp4">
+                            Tu navegador no soporta la etiqueta de video.
+                        </video>
+
+                        <div class=" carousel-caption d-md-block text-white">
+                            <div class="carousel_content d-flex flex-column align-items-start text-start">
+                                <h2 class="carousel_titulo fw-bold ">EL ENCARGADO</h2>
+                                <p class="">SERIE <b>HD</b> · 2022-2024 · 3 temporadas · Comedia </p>
+                                <p class="carousel_desc">Esta comedia dramatica sigue a Eliseo, el encargado entrometido
+                                    y manipulador de un edificio.</p>
+                                <div class="botones d-flex ">
+                                    <button class="carousel_boton btn btn-light btn-lg m-1 ">VER AHORA</button>
+                                    <button class="carousel_boton btn btn-dark btn-lg m-1">DETALLES</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="carousel-item" data-bs-interval="17500">
+                        <video class="carousel-img d-block w-100" autoplay loop muted poster="imagen-previa.jpg">
+                            <source src="/videos/deadpool2-video.MOV" type="video/mp4">
+                            Tu navegador no soporta la etiqueta de video.
+                        </video>
+
+                        <div class=" carousel-caption d-md-block text-white">
+                            <div class="carousel_content d-flex flex-column align-items-start text-start">
+                                <h2 class="carousel_titulo fw-bold ">DEADPOOL2</h2>
+                                <p class="">PELICULA <b>HD</b> · 2018 · 2h 2min ·Ciencia ficción, Comedia </p>
+                                <p class="carousel_desc">La secuela de la primera parte.</p>
+                                <div class="botones d-flex ">
+                                    <button class="carousel_boton btn btn-light btn-lg m-1 ">VER AHORA</button>
+                                    <button class="carousel_boton btn btn-dark btn-lg m-1">DETALLES</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="carousel-item" data-bs-interval="17500">
+                        <video class="carousel-img d-block w-100" autoplay loop muted poster="imagen-previa.jpg">
+                            <source src="/videos/loki-video.MOV" type="video/mp4">
+                            Tu navegador no soporta la etiqueta de video.
+                        </video>
+
+                        <div class=" carousel-caption d-md-block text-white">
+                            <div class="carousel_content d-flex flex-column align-items-start text-start">
+                                <h2 class="carousel_titulo fw-bold ">LOKI</h2>
+                                <p class="">SERIE <b>HD</b> · 2021-2023 · 2 temporadas · Ciencia ficción, Fantasía </p>
+                                <p class="carousel_desc">Tras robar el Teseracto en "Avengers: Endgame", Loki cae ante
+                                    la Autoridad de Variación temporal.</p>
+                                <div class="botones d-flex ">
+                                    <button class="carousel_boton btn btn-light btn-lg m-1 ">VER AHORA</button>
+                                    <button class="carousel_boton btn btn-dark btn-lg m-1">DETALLES</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="carousel-item" data-bs-interval="17500">
+                        <video class="carousel-img d-block w-100" autoplay loop muted poster="imagen-previa.jpg">
+                            <source src="videos/logan-video.MOV" type="video/mp4">
+                            Tu navegador no soporta la etiqueta de video.
+                        </video>
+
+                        <div class=" carousel-caption d-md-block text-white">
+                            <div class="carousel_content d-flex flex-column align-items-start text-start">
+                                <h2 class="carousel_titulo fw-bold ">LOGAN</h2>
+                                <p class="">PELICULA <b>HD</b> · 2017 · 2h 20min · Drama, Ciencia ficción</p>
+                                <p class="carousel_desc">Logan y el Profesor X conocen a una joven mutante que es
+                                    perseguida.</p>
+                                <div class="botones d-flex ">
+                                    <button class="carousel_boton btn btn-light btn-lg m-1 ">VER AHORA</button>
+                                    <button class="carousel_boton btn btn-dark btn-lg m-1">DETALLES</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions"
+                    data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions"
+                    data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Next</span>
+                </button>
+            </div>
+        </section>
+
+
+        <!-- LAS MAS ACLAMADAS -->
+        <div class="container" id="aclamadas">
+            <p class="text-white text-center-fw-bold h2 mt-3"> Peliculas
+                Sugeridas <i class="fa-regular fa-star fa-xs"></i></p>
+        </div>
+        <section class="container_flex container mb-5">
+            <div class="div_animations">
+                <a href="#"><img src="/img/peliculas-series/pelis-principales/cars-2.webp" height="250" width="350"
+                        alt="movie-poster" class="img-box"></a>
+            </div>
+            <div class="div_animations">
+                <a href="#"><img src="/img/peliculas-series/pelis-principales/deadpool.webp" height="250" width="350"
+                        alt="movie-poster" class="img-box"></a>
+            </div>
+            <div class="div_animations">
+                <a href="#"><img src="/img/peliculas-series/pelis-principales/intensamente.webp" height="250"
+                        width="350" alt="movie-poster" class="img-box"></a>
+            </div>
+            <div class="div_animations">
+                <a href="#"><img src="/img/peliculas-series/pelis-principales/logan.webp" height="250" width="350"
+                        alt="movie-poster" class="img-box"></a>
+            </div>
+            <div class="div_animations">
+                <a href="#"><img src="/img/peliculas-series/pelis-principales/planeta de los simios.webp" height="250"
+                        width="350" alt="movie-poster" class="img-box"></a>
+            </div>
+            <div class="div_animations">
+                <a href="#"><img src="/img/peliculas-series/pelis-principales/cars-3.webp" height="250" width="350"
+                        alt="movie-poster" class="img-box"></a>
+            </div>
+            <div class="div_animations">
+                <a href="#"><img src="/img/peliculas-series/pelis-principales/deadpool-2.webp" alt="movie-poster"
+                        height="250" width="350" class="img-box"></a>
+            </div>
+            <div class="div_animations">
+                <a href="#"><img src="/img/peliculas-series/pelis-principales/cars.webp" height="250" width="350"
+                        alt="movie-poster" class="img-box"></a>
+            </div>
+            <div class="div_animations">
+                <a href="#"><img src="/img/peliculas-series/pelis-principales/transformers.webp" height="250"
+                        width="350" alt="movie-poster" class="img-box"></a>
+            </div>
+
+        </section>
+        
+         <!-- Publicidad -->
+
+
+ <section class="publicidad bg-gradient py-5">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-6 d-flex flex-column justify-content-center align-items-center text-center pb-5 mt-3">
+        <h1 class="display-4 mb-4 fw-bold">Planes <br>50% Off</h1>
+        <p class="lead text-bg-light fw-bolder mb-4 px-2">Standard con publicidad | Premium | Familiar</p>
+        <a href="#" class="btn btn-warning text-black">Suscribirse</a>
+      </div>
+      <div class="galeria_publicidad col-md-6 d-flex justify-content-center flex-wrap ">
+        <img src="/img/peliculas-series/pelis-accion/capitan-america.webp" alt="Capitán América" class="gallery_img ">
+        <img src="/img/peliculas-series/series-principales/el encargado.webp" alt="Cars 3" class="gallery_img ">
+        <img src="/img/peliculas-series/pelis-principales/cars-3.webp" alt="Ant-Man" class="gallery_img ">
+        <img src="/img/peliculas-series/pelis-principales/deadpool-2.webp" alt="El Encargado" class="gallery_img">
+      </div>
+    </div>
+  </div>
+</section>
+
+
+
+        <section>
+        <!-- SERIES SUGERIDAS -->
+
+        <div class="container" id="seriesaclamadas">
+        <p class="text-white text-center-fw-bold h2 mt-3"> Series
+            Sugeridas <i class="fa-regular fa-star fa-xs"></i></p>
+    </div>
+    <section class="container_flex container mb-5">
+        <div class="div_animations">
+            <a href="#"><img src="/img/peliculas-series/series-principales/el encargado.webp" height="250" width="350"
+                    alt="movie-poster" class="img-box"></a>
+        </div>
+        <div class="div_animations">
+            <a href="#"><img src="/img/peliculas-series/series-principales/daredevil.webp" height="250" width="350"
+                    alt="movie-poster" class="img-box"></a>
+        </div>
+        <div class="div_animations">
+            <a href="#"><img src="/img/peliculas-series/series-principales/falcon.webp" height="250"
+                    width="350" alt="movie-poster" class="img-box"></a>
+        </div>
+        <div class="div_animations">
+            <a href="#"><img src="/img/peliculas-series/series-principales/impuros.webp" height="250" width="350"
+                    alt="movie-poster" class="img-box"></a>
+        </div>
+        <div class="div_animations">
+            <a href="#"><img src="/img/peliculas-series/series-principales/la voz ausente.webp" height="250"
+                    width="350" alt="movie-poster" class="img-box"></a>
+        </div>
+        <div class="div_animations">
+            <a href="#"><img src="/img/peliculas-series/series-principales/loki.webp" height="250" width="350"
+                    alt="movie-poster" class="img-box"></a>
+        </div>
+        <div class="div_animations">
+            <a href="#"><img src="/img/peliculas-series/series-principales/swat.webp" alt="movie-poster"
+                    height="250" width="350" class="img-box"></a>
+        </div>
+        <div class="div_animations">
+            <a href="#"><img src="/img/peliculas-series/series-principales/the-old-man.webp" height="250" width="350"
+                    alt="movie-poster" class="img-box"></a>
+        </div>
+        </section>
+
+
+    </main>
+
+    <!-- Footer -->
+
+    <footer>
+        <div class="contenedor_footer container-fluid d-flex bg-dark flex-column">
+            <div class="row justify-content-center align-items-center w-100 p-2">
+                <div class="col-lg-3">
+                    <img src="/img/peliculas-series/img-logo.png" alt="" width="200px">
+                </div>
+                <div class="col-lg-3">
+                    <a href="#"><i class="fa-brands fa-whatsapp fa-xl"></i></a>
+                    <a href="#"><i class="fa-brands fa-instagram fa-xl"></i></a>
+                    <a href="#"><i class="fa-brands fa-twitter fa-xl"></i></a>
+                </div>
+                <div class="col-lg-3">
+                    <a href="#">Contacto</a>
+                </div>
+                <div class="col-lg-3">
+                    <a href="#">Acerca de nosotros</a>
+                </div>
+            </div>
+            <div class="row justify-content-center align-items-center w-100 p-2">
+                <div class="col-lg-12">
+                    <p class="text-center ps-5">Team 3 - Todos los derechos reservados</p>
+                </div>
+            </div>
+        </div>
+    </footer>
 
     <!-- Bootstrap 5 SCRIPT -->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4" crossorigin="anonymous"></script>    
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4"
+        crossorigin="anonymous"></script>
 </body>
 
 </html>
