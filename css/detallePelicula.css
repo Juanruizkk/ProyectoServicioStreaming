@@ -1,0 +1,9 @@
+.contenedor_principal{
+        height: 100%; /* Toma toda la altura de la pantalla */
+        background-image: linear-gradient(to top, var(--colorPrimarioAzul), transparent 110%), url('/img/peliculas-series/pelis-principales/dead-pool-2-detalle.webp');
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+        width: 100%;
+        
+}
