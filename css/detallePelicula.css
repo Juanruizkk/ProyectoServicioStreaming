@@ -2,7 +2,7 @@
         height: 100%; /* Toma toda la altura de la pantalla */
         background-image: linear-gradient(to top, var(--colorPrimarioAzul), transparent 110%), url('/img/peliculas-series/pelis-principales/dead-pool-2-detalle.webp');
         background-size: cover;
-        background-position: center;
+        background-position: center; /* Centra la imagen en el contenedor */
         background-repeat: no-repeat;
         width: 100%;     
 }
@@ -12,16 +12,18 @@
         height: 700px;
         border-radius: 15px;
         box-shadow: 10px 10px 15px rgba(0, 0, 0, 0.7);  /*sombra al video Desplazamiento horizontal, desplazamiento vertical, desenfoque, color */
-   
 }
 
 
  /* MEDIAQUERIES*/
 
 @media (max-width: 834px){ /*tengo que tener como maximo 834px para que se apliquen los cambios*/
-.trailer_video{
-        height: 400px;
-}
+        .trailer_video{
+                height: 400px;
+        }
+        .contenedor_principal{
+                background-position: 70%; /* modifico la posicion de la imagen */ 
+        }
 }
 
 @media(max-width:480px){
@@ -29,9 +31,12 @@
     }
 
 @media(max-width: 428px) { /*tengo que tener como maximo 428px para que se apliquen los cambios*/
-.trailer_video{
-        height: 250px;
-}
+        .trailer_video{
+                height: 250px;
+        }
+        .contenedor_principal{
+                background-position: 80%; /* modifico la posicion de la imagen */ 
+        }
 }
     
 @media(max-width: 391px) {
