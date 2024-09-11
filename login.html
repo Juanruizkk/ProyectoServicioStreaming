@@ -22,9 +22,9 @@
                 Inicia sesión <i class="fa-solid fa-right-to-bracket"></i> 
             </h1>
             <div class="form-row">
-                <div class="form-group"> <label for="nombre">Usuario o correo</label>  <input type="text" id="codigo" name="codigo" pattern="[A-Za-z0-9]{5,30}" required> </div>
+                <div class="form-group"> <label for="nombre">Usuario o correo</label>  <input type="text" id="codigo" name="codigo" pattern="[A-Za-z0-9]{5,30}" maxlength="30" required> </div>
                 <div class="form-group"> <label for="contraseña">Contraseña</label> <input type="password"
-                        id="contraseña" name="contraseña" pattern="(?=.*[a-z])(?=.*[A-Z])(?=.*\d)(?=.*[@$!%*?&])[A-Za-z\d@$!%*?&]{1,15}" required> </div>
+                        id="contraseña" name="contraseña" pattern="(?=.*[a-z])(?=.*[A-Z])(?=.*\d)(?=.*[@$!%*?&])[A-Za-z\d@$!%*?&]{1,20}" maxlength="20" required> </div>
             </div>
 
             <!-- CONTRASEÑA : 
