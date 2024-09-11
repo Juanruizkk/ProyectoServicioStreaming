@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pagina de contacto</title>
+    <!-- Bootstrap 5 -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+    <!-- FONTAWESOME -->
+    <script src="https://kit.fontawesome.com/eef5852768.js" crossorigin="anonymous"></script>
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="/css/style.css">
+    <link rel="shortcut icon" href="/img/peliculas-series/img-logo-favicon.png" type="image/x-icon">
+    <link rel="stylesheet" href="/css/paginadecontacto.css">
+</head>
+<body>
+       <!-- Navbar -->
+
+       <nav class="navbar navbar-expand-lg bg-body-tertiary">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#"><img src="/img/peliculas-series/img-logo.png" alt="logo-pag"
+                    width="200px"></a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link" aria-current="page" href="/index.html">Inicio</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Películas</a>
+                    </li>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Series</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Planes</a>
+                    </li>
+                </ul>
+                <form class="d-flex" role="search">
+                    <input class="form-control me-2" type="search" placeholder="Buscar película o serie"
+                        aria-label="Search">
+                    <button class="btn btn-outline-light" type="submit"><i
+                            class="fa-solid fa-magnifying-glass"></i></button>
+                </form>
+                <br>
+                <ul class="navbar-nav">
+                    <li class="nav-item ms-4 me-3">
+                        <a class="nav-link" href="#"><i class="fa-solid fa-user fa-xl"></i></a>
+            </div>
+            </ul>
+        </div>
+    </nav>
+<!-- DONDE ENCONTRARNOS -->
+    
+    <section class="mapa text-start">
+        <div class="container py-3">
+            <h2>Nos pueden encontrar en <i class="fa-solid fa-location-dot"></i></h2>
+            
+            <div class="map py-3 d-flex " >
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3560.436444373734!2d-65.19293458247375!3d-26.826067339418522!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94225c1dcf01c3cb%3A0xafbaa4a36ec6713a!2sSheraton%20Tucuman%20Hotel!5e0!3m2!1ses-419!2sar!4v1725822737291!5m2!1ses-419!2sar" class="ubicacion" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+        </div>
+    </section>
+
+<!-- formulario de contacto -->
+ <section class="contact py-1 " id="contacto">
+    <div class="container">
+        <div class="form row justify-content-center">
+            <div class="col-lg-8">
+                <h2 class="text-center fw-bold">Contacta con nosotros</h2>
+            </div>
+        </div>
+        <div class="row justify-content-center">
+            <div class="col-md-2 mx-5">
+                <article class="contact d-flex mb-3 my-3">
+                    <div class="icon fs-4 text-danger">
+                        <i class="fa-solid fa-envelope"></i>
+                    </div>
+                    <div class="text ms-3">
+                        <h3 class="fs-6">Email</h3>
+                        <p class="text-break">example@gmail.com</p>
+                    </div>
+                </article>
+
+                <article class="contact d-flex mb-3">
+                    <div class="icon fs-4 text-danger">
+                        <i class="fa-solid fa-phone"></i>
+                    </div>
+                    <div class="text ms-3">
+                        <h3 class="fs-6">Telefono</h3>
+                        <p class="text-break">+543814620826</p>
+                    </div>
+                </article>
+
+                <article class="contact d-flex mb-3">
+                    <div class="icon fs-4 text-danger">
+                        <i class="fa-solid fa-location-dot"></i>
+                    </div>
+                    <div class="text ms-3">
+                        <h3 class="fs-6">Ubicacion</h3>
+                        <p class="text-break">Av.Soldati y Calle Haití - Tucumán</p>
+                    </div>
+                </article>
+            </div>
+            <div class="col-md-5 my-3 mx-7">
+                <div class="contact-form">
+                    <form action="">
+                            <div class="col-lg-7 mb-4">
+                                <input type="text" name="name" placeholder="Tu Nombre" pattern="[A-Za-z]{1,15}"  minlength="2" maxlength="15"class="form-control form-control-lg fs-6 border-0 shadow-sm"  required>
+                            </div>
+                            <div class="col-lg-7 mb-4">
+                            <input type="email" name="email" placeholder="Tu email" class="form-control form-control-lg fs-6 border-0 shadow-sm" minlength="5" 
+                            maxlength="25" required>
+                        </div>
+                            <div class="row">
+                                <div class="col-lg-7 mb-4">
+                                    <input type="text" name="asunto" placeholder="Asunto" class="form-control form-control-lg fs-6 border-0 shadow-sm"   minlength="5" maxlength="100" pattern="[A-Za-z0-9\s]+" required>
+                                </div>
+                            </div>
+                            <div class="col-lg-7 mb-4">
+                                <textarea rows-5 name="mensaje" id="" placeholder="Escribe tu mensaje" class="form-control form-control-lg fs-6 border-0 shadow-sm"  minlength="10" 
+                                maxlength="100"></textarea> </div>
+    
+                        </div>
+                        <div class="col-lg-12">
+                            <button type="submit" class="btn btn-primary px-3">Enviar mensaje</button>
+
+                        
+                        </div>
+    
+                    </form>
+    
+    
+                </div>
+    
+        </div>
+
+    </div>
+ </section>
+
+    
+
+
+
+
+
+
+
+
+
+
+     <!-- Bootstrap 5 SCRIPT -->
+     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"
+     integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4"
+     crossorigin="anonymous"></script>
+</body>
+</html>
