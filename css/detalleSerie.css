@@ -12,6 +12,7 @@
 
     img{
         border-radius: 15px;
+        object-fit: cover;
         box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.6);
         width: 100%; /* Ajusta según sea necesario */
         height: auto; /* Mantiene la proporción de la imagen */
@@ -78,7 +79,7 @@
 
 @media (max-width: 834px){ /*tengo que tener como maximo 834px para que se apliquen los cambios*/
     .contenedor_principalSerie{
-            background-position: 70%; /* modifico la posicion de la imagen */ 
+            background-position: 80%; /* modifico la posicion de la imagen */ 
     }
 }
 
@@ -88,8 +89,13 @@
 
 @media(max-width: 428px) { /*tengo que tener como maximo 428px para que se apliquen los cambios*/
     .contenedor_principalSerie{
-            background-position: 80%; /* modifico la posicion de la imagen */ 
+            background-position: 75%; /* modifico la posicion de la imagen */ 
     }
+
+    .contenedor_card{
+        width: 100%;
+    }
+    
 }
 
 @media(max-width: 391px) {
