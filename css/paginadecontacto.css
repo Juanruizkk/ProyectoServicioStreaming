@@ -1,0 +1,23 @@
+h2{
+    color: white;
+    font-family: var(--tipografiaGeneral);
+}
+
+.map{
+    justify-content:center
+}
+.ubicacion{
+    width: 70%;
+    height: 15em;
+    border-radius: 8px;
+    
+}
+.mapa{
+    background-color: rgba(0, 68, 117, 0.6); }
+
+.contact{
+    background-color:#004475
+}
+h3, p, i{
+    color: white;
+}
