@@ -1,33 +1,38 @@
-*{
+* {
     scrollbar-color: #004475 #347cbc;
     scrollbar-width: 10px;
     scroll-behavior: smooth;
     overscroll-behavior: contain;
 }
-body{
+
+body {
     background-color: rgb(53, 52, 52);
     font-family: 'Poppins', 'Arial';
 }
 
-.logo-suscripcion{
+.card-body {
+    height: 280px;
+}
+
+.logo-suscripcion {
     margin-left: 80px;
 }
 
-.suscripcion_titulo{
+.suscripcion_titulo {
     text-shadow: 3px 3px black;
 }
 
-.plan_familiar{
+.plan_familiar {
     background-color: rgb(35, 175, 35);
 }
 
-p{
+p {
     margin-bottom: 0.20rem;
 }
 
-    /* FORMULARIO SUSCRIPCION */
+/* FORMULARIO SUSCRIPCION */
 
-.form-body{
+.form-body {
     margin: 0;
     height: 100vh;
     display: flex;
@@ -37,7 +42,7 @@ p{
     color: white;
 }
 
-.form-container{
+.form-container {
     background: #004475;
     padding: 20px;
     border-radius: 30px;
@@ -46,39 +51,39 @@ p{
     width: 100%;
 }
 
-.suscripcion-form{
+.suscripcion-form {
     display: flex;
     flex-direction: column;
     gap: 15px;
 }
 
-.suscripcion-form__title{
+.suscripcion-form__title {
     text-align: center;
     font-size: 1.6em;
     margin-bottom: 10px;
     font-weight: bold;
 }
 
-.form-row{
+.form-row {
     display: flex;
     gap: 15px;
     flex-direction: column;
     align-items: center;
 }
 
-.form-group{
+.form-group {
     flex: 1;
     display: flex;
     flex-direction: column;
 }
 
-label{
+label {
     display: flex;
     margin-bottom: 10px;
     font-size: 0.9rem;
 }
 
-input{
+input {
     padding: 7px;
     border: 1px solid #ccc;
     border-radius: 13px;
@@ -87,14 +92,14 @@ input{
 }
 
 
-.form-buttons{
+.form-buttons {
     display: flex;
     justify-content: center;
     gap: 50px;
     padding-top: 40px;
 }
 
-.cancel-button{
+.cancel-button {
     padding: 10px 30px;
     border: none;
     border-radius: 50px;
@@ -103,14 +108,15 @@ input{
     cursor: pointer;
     background-color: #347cbc;
     text-decoration: none;
-    &:hover{
+
+    &:hover {
         background-color: #9b0101;
         outline: 2px solid white;
         color: white;
     }
 }
 
-.submit-button{
+.submit-button {
     border: none;
     border-radius: 5px;
     background-color: #347cbc;
@@ -119,7 +125,8 @@ input{
     border-radius: 50px;
     cursor: pointer;
     color: white;
-    &:hover{
+
+    &:hover {
         outline: 2px solid white;
         background-color: hsl(240, 100%, 34%);
     }
@@ -127,27 +134,31 @@ input{
 
 /* TABLET 768px */
 
-@media (max-width:768px){
-    .logo-suscripcion{
+@media (max-width:768px) {
+    .logo-suscripcion {
         width: 0;
     }
 }
 
 /* MOBILE 480px */
 
-@media (max-width:480px){
-    .form-body{
+@media (max-width:480px) {
+    .form-body {
         margin: 100px auto;
     }
-    .form-group{
+
+    .form-group {
         width: 100%;
         align-items: center;
     }
-    .form-buttons{
+
+    .form-buttons {
         flex-direction: column;
         gap: 10px;
     }
-    .form-buttons a, .form-buttons button{
+
+    .form-buttons a,
+    .form-buttons button {
         width: 100%;
         text-align: center;
     }
