@@ -25,7 +25,7 @@
 
   <div class="container">
     <h1 class="suscripcion_titulo text-white text-center pb-3">Planes</h1>
-    <div class="row row-cols-1 row-cols-md-3 g-4">
+    <div class="row row-cols-1 row-cols-xxl-3 row-cols- g-4">
       <div class="col">
         <div class="card bg-info">
           <div class="d-flex justify-content-center">
@@ -42,7 +42,7 @@
             <p>Sin anuncios.</p>
           </div>
           <div class="card-footer">
-            <small class="text-body-secondary h5">Precio: $9.99/mes</small>
+            <small class="text-body-secondary h5 text-black">Precio: $9.99/mes</small>
           </div>
         </div>
       </div>
@@ -63,7 +63,7 @@
             Primer mes gratis.</p>
           </div>
           <div class="card-footer">
-            <small class="text-body-secondary h5">Precio: $19.99/mes</small>
+            <small class="text-body-secondary h5 text-black">Precio: $19.99/mes</small>
           </div>
         </div>
       </div>
@@ -84,7 +84,7 @@
             <p> Primer mes con un 50% de descuento.</p>
           </div>
           <div class="card-footer">
-            <small class="text-body-secondary h5">Precio: $24.99/mes</small>
+            <small class="text-body-secondary h5 text-black">Precio: $24.99/mes</small>
           </div>
         </div>
       </div>
@@ -129,6 +129,13 @@
             <label for="contraseña">Contraseña</label>
             <input type="password" id="contraseña" name="contraseña"
               pattern="(?=.*[a-z])(?=.*[A-Z])(?=.*\d)(?=.*[@$!%*?&])[A-Za-z\d@$!%*?&]{10,20}" maxlength="20" required>
+              
+              <small class="requerimiento"> Debe tener: </small>
+            <small>  • Una letra minúscula. </small>
+              <small> • Una letra mayúscula.</small>
+              <small> • Un número.</small>
+                <small>  • Un caracter especial (@$!%*?&).</small>
+                  <small> • Entre 10 y 20 caracteres.</small>
           </div>
         </div>
 

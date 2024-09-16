@@ -10,6 +10,10 @@ body {
     font-family: 'Poppins', 'Arial';
 }
 
+small{
+    color: grey;
+}
+
 .card-body {
     height: 280px;
 }
@@ -28,6 +32,10 @@ body {
 
 p {
     margin-bottom: 0.20rem;
+}
+
+.requerimiento{
+    margin-top: 10px;
 }
 
 /* FORMULARIO SUSCRIPCION */
@@ -132,6 +140,15 @@ input {
     }
 }
 
+
+/* LARGE DEVICES 992px */
+
+@media (max-width:992px) {
+    div.card-body{
+        text-align: center;
+    }
+}
+
 /* TABLET 768px */
 
 @media (max-width:768px) {
@@ -161,5 +178,13 @@ input {
     .form-buttons button {
         width: 100%;
         text-align: center;
+    }
+}
+
+/* MOBILE MEDIUM 375px */
+
+@media (max-width:375px) {
+    div.card-body{
+        height: 400px;
     }
 }
