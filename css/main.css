@@ -117,6 +117,46 @@
     filter: contrast(120%);
 }
 
+
+/* ACERCA DE */
+
+.img-container-acerca {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.img-responsive-acerca {
+    width: 200px;
+    max-width: 150px;
+    height: 150px;
+    object-fit: cover;
+    max-width: 200px;
+    overflow: hidden;
+    border-radius: 100%;
+    cursor: pointer;
+    filter: blur(0.5px) brightness(60%);
+    transition: all 1s ease;
+    &:hover{
+        filter: blur(0)
+        brightness(100%)
+        ;
+    }  
+}
+
+.subtitle-acerca{
+    text-decoration: none;
+    color: white;
+}
+
+.parrafo-acerca{
+    text-align: justify; 
+    text-indent: 2em
+}
+
+
+
 /* DISPOSITIVOS PEQUEÑOS 768PX */
 
 @media (max-width: 768px){
@@ -149,5 +189,4 @@
         /* Reduce el tamaño del texto */
     }
 }
-
 
