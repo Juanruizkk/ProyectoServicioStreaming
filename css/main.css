@@ -155,6 +155,11 @@
     text-indent: 2em
 }
 
+.big-first-letter::first-letter {
+    font-size: 2rem;
+    font-weight: bold;
+}
+
 
 
 /* DISPOSITIVOS PEQUEÑOS 768PX */
