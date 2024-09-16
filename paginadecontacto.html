@@ -111,7 +111,7 @@
             </div>
             <div class="col-md-5 my-3 mx-7">
                 <div class="contact-form">
-                    <form action="">
+                    <form id="myform" action="javascript:void(0);">
                             <div class="col-lg-7 mb-4">
                                 <input type="text" name="name" placeholder="Tu Nombre" pattern="[A-Za-z ]{1,15}"  minlength="2" maxlength="15"class="form-control form-control-lg fs-6 border-0 shadow-sm"  required>
                             </div>
@@ -131,17 +131,28 @@
                         </div>
                         <div class="col-lg-12">
                             <button type="submit" class="btn btn-primary px-3">Enviar mensaje</button>
-
-                        
                         </div>
-    
                     </form>
-    
-    
                 </div>
-    
+                <script>
+                    document.getElementById('myForm').addEventListener('submit', function(event) {
+                        // Evitar el envío del formulario para manejarlo con JavaScript
+                        event.preventDefault();
+                        
+                        // Obtener el formulario
+                        var formulario = document.getElementById('myForm');
+            
+                        // Verificar si el formulario es válido
+                        if (formulario.checkValidity()) {
+                            // Si el formulario es válido, redirigir a la página destino
+                            window.location.href = 'error404.html';
+                        } else {
+                            // Si el formulario no es válido, mostrar mensajes de error
+                            formulario.reportValidity();
+                        }
+                    });
+                </script>
         </div>
-
     </div>
  </section>
 
