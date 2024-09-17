@@ -10,3 +10,17 @@ footer p{
     font-size: smaller;
     font-weight: lighter;
 }
+
+.icon_footer{
+    padding: 5px;
+}
+
+/* MOBILE 480px */
+
+@media (max-width:480px){
+    footer{
+        
+        align-items: center;
+        justify-content: center;
+    }
+}

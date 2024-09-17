@@ -1,0 +1,144 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background: url('/img/peliculas-series/fondo\ de\ login/Captura.PNG') no-repeat center center / cover fixed;
+    box-sizing: border-box;
+    color: white;
+    font-weight: bolder;
+    font-family: 'Poppins', 'Arial';
+}
+
+.form-container{
+    background: #004475;
+    height: 410px;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+    max-width: 380px;
+    width: 100%;
+}
+
+img{
+    position: absolute;
+    top: 0;
+    left: 0;
+    padding-left: 60px;
+}
+
+.login-form{
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.login-form__title{
+    text-align: center;
+    font-size: 1.8em;
+    margin-bottom: 10px;
+    color: white;
+    text-shadow: 1px 2px black;
+}
+
+.form-row{
+    align-items: center;
+    display: flex;
+    gap: 15px;
+    flex-direction: column;
+}
+
+.form-group{
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+}
+
+label{
+    margin-bottom: 10px;
+    font-size: 0.9rem;
+}
+
+input, textarea{ 
+    padding: 5px;
+    border: 1px solid #000000;
+    border-radius: 10px;
+    font-size: 1em;
+    width: 100%;
+}
+
+.form-buttons{
+    padding-top: 20px;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.back-button{ 
+    padding: 10px 40px;
+    border: none;
+    border-radius: 50px;
+    color: white;
+    font-size: 1em;
+    cursor: pointer;
+    background-color: #347cbc;
+    text-decoration: none;
+    &:hover{
+        background-color:  #9b0101;
+        outline: 2px solid white;
+        color: white;
+    }
+}
+
+
+
+.submit-button{
+    border: none;
+    border-radius: 5px;
+    background-color: #347cbc;
+    font-weight: bold;
+    padding: 10px 40px;
+    border-radius: 50px;
+    cursor: pointer;
+    color: white;
+    &:hover{
+        outline: 2px solid white;
+        background-color: hsl(240, 100%, 34%);
+    }
+}
+
+.noacc-container{
+    display: flex;
+    justify-content: center;
+}
+
+a {
+    text-decoration: none;
+    color: white;
+}
+
+/* TABLET 768px */
+
+@media (max-width:768px){
+    .img-logo{
+        width: 0;
+    }
+    
+}
+
+/* MOBILE 480px */
+
+@media (max-width:480px){
+    .form-group{
+        width: 100%;
+    }
+    .form-buttons{
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .form-buttons a, .form-buttons button{
+        width: 100%;
+        text-align: center;
+    }
+}

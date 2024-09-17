@@ -1,0 +1,28 @@
+body {
+    text-align: center;
+  }
+  .game-area {
+    position: relative;
+    width: 100%;
+    height: 400px;
+    background-color: #ffffff;
+    border: 4px solid var( --colorPrimarioAzul);
+    margin: 20px auto;
+    max-width: 600px;
+    overflow: hidden;
+  }
+  .circle{
+    width: 70px;
+    height: 70px;
+    position: absolute;
+    cursor: pointer;
+  }
+
+
+@media(max-width: 428px) { /*tengo que tener como maximo 428px para que se apliquen los cambios*/
+    
+    .img-error{
+        width: 300px;
+    }  
+}
+  
