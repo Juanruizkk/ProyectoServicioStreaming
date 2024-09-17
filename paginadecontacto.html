@@ -111,7 +111,7 @@
             </div>
             <div class="col-md-5 my-3 mx-7">
                 <div class="contact-form">
-                    <form id="myform" action="javascript:void(0);">
+                    <form id="miFormulario" action="javascript:void(0);">
                             <div class="col-lg-7 mb-4">
                                 <input type="text" name="name" placeholder="Tu Nombre" pattern="[A-Za-z ]{1,15}"  minlength="2" maxlength="15"class="form-control form-control-lg fs-6 border-0 shadow-sm"  required>
                             </div>
@@ -121,7 +121,7 @@
                         </div>
                             <div class="row">
                                 <div class="col-lg-7 mb-4">
-                                    <input type="text" name="asunto" placeholder="Asunto" class="form-control form-control-lg fs-6 border-0 shadow-sm"   minlength="5" maxlength="100" pattern="[A-Za-z0-9\s]+" required>
+                                    <input type="text" name="asunto" placeholder="Asunto" class="form-control form-control-lg fs-6 border-0 shadow-sm"   minlength="5" maxlength="20" pattern="[A-Za-z0-9\s]+" required>
                                 </div>
                             </div>
                             <div class="col-lg-7 mb-4">
@@ -135,23 +135,20 @@
                     </form>
                 </div>
                 <script>
-                    document.getElementById('myForm').addEventListener('submit', function(event) {
-                        // Evitar el envío del formulario para manejarlo con JavaScript
-                        event.preventDefault();
-                        
-                        // Obtener el formulario
-                        var formulario = document.getElementById('myForm');
-            
-                        // Verificar si el formulario es válido
-                        if (formulario.checkValidity()) {
-                            // Si el formulario es válido, redirigir a la página destino
-                            window.location.href = 'error404.html';
-                        } else {
-                            // Si el formulario no es válido, mostrar mensajes de error
-                            formulario.reportValidity();
-                        }
+                    document.getElementById('miFormulario').addEventListener('submit', function (event) {
+                      // Prevenir el envío por defecto
+                      event.preventDefault();
+                
+                      // Verificar si el formulario es válido
+                      if (this.checkValidity()) {
+                        // Si es válido, redirigir a la página de error personalizada
+                        window.location.href = '/error404.html';
+                      } else {
+                        // Si no es válido, mostrar los errores de validación nativos
+                        this.reportValidity();
+                      }
                     });
-                </script>
+                  </script>
         </div>
     </div>
  </section>
@@ -165,15 +162,15 @@
                 <img src="/img/peliculas-series/img-logo.png" alt="" width="200px">
             </div>
             <div class="col-12 col-md-6 col-lg-3 text-center">
-                <a class="icon_footer" href="#"><i class="fa-brands fa-instagram fa-xl"></i></a>
-                <a class="icon_footer" href="#"><i class="fa-brands fa-whatsapp fa-xl"></i></a>
-                <a class="icon_footer" href="#"><i class="fa-brands fa-twitter fa-xl"></i></a>
+                <a class="icon_footer" href="error404.html"><i class="fa-brands fa-instagram fa-xl"></i></a>
+                <a class="icon_footer" href="error404.html"><i class="fa-brands fa-whatsapp fa-xl"></i></a>
+                <a class="icon_footer" href="error404.html"><i class="fa-brands fa-twitter fa-xl"></i></a>
             </div>
             <div class="col-12 col-md-6 col-lg-3 text-center">
                 <a href="/paginadecontacto.html">Contacto</a>
             </div>
             <div class="col-12 col-md-6 col-lg-3 text-center">
-                <a href="#">Acerca de nosotros</a>
+                <a href="/acercade.html">Acerca de nosotros</a>
             </div>
         </div>
         <div class="row justify-content-center align-items-center w-100 p-2">
@@ -183,6 +180,7 @@
         </div>
     </div>
 </footer>
+
 
 
 
